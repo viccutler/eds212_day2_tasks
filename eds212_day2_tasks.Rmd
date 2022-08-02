@@ -38,3 +38,24 @@ t <- 0
 eval(my_deriv_3)
 ```
 
+Section 4
+
+ggplot
+```{r}
+ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = species)) +
+  labs(x = "Bill Length (mm)", 
+       y = "Bill Depth (mm)", 
+       title = "Bill Length vs. Bill Depth") +
+  theme_minimal()
+```
+
+jitterplot
+```{r}
+ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) +
+  geom_jitter() +
+  labs(title = "Species vs. Flipper Length",
+       x = "Species",
+       y = "Flipper Length (mm)")
+```
+
