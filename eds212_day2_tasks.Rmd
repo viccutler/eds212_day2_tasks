@@ -11,3 +11,30 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
+section 3 A
+```{r}
+exp_1 = expression(x^2)
+my_deriv_1 = D(exp_1, "x")
+my_deriv_1
+x <- 3
+eval(my_deriv_1)
+```
+
+section 3 B
+```{r}
+ex_2 = expression(2 * (3 * a + 2)^4 -5)
+my_deriv_2 = D(ex_2, "a")
+my_deriv_2
+a <- 1.2
+eval(my_deriv_2)
+```
+
+Section 3 C
+```{r}
+ex_3 = expression((-4 * t)/(t^2 + 1)^3)
+my_deriv_3 = D(ex_3, "t")
+my_deriv_3
+t <- 0
+eval(my_deriv_3)
+```
+
